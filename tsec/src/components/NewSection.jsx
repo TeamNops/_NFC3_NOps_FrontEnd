@@ -34,7 +34,7 @@ const NewSection = () => {
   };
 
   return (
-    <div className="w-full h-screen relative">
+    <div id="new-section" className="w-full h-screen relative">
       <video
         ref={videoRef}
         muted
@@ -45,24 +45,27 @@ const NewSection = () => {
       </video>
       <div className="relative z-10 flex justify-start items-center w-full h-full px-20">
         <div className="grid gap-8">
-          <button
+          <a
             className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
+            href="/soil"
           >
             Soil Health Analysis
-          </button>
-          <button
+          </a>
+          <a
             className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
+            href="/crop"
           >
             Crop Health Monitoring
-          </button>
-          <button
+          </a>
+          <a
             className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
+            href="/soil"
           >
             Personalized Recommendations
-          </button>
+          </a>
         </div>
       </div>
     </div>
