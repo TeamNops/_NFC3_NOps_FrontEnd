@@ -90,7 +90,7 @@ const CropHealth = () => {
         <video
           ref={videoRef}
           autoPlay
-          className="w-full max-w-lg h-auto border-2 border-black rounded-lg mb-10"
+          className="w-full max-w-lg h-auto border-2 border-black rounded-lg mb-2 "
         />
         <button
           className="mt-3 px-4 py-2 text-lg font-semibold text-white bg-black bg-opacity-35 rounded-lg hover:scale-110"
@@ -102,7 +102,7 @@ const CropHealth = () => {
         <canvas ref={canvasRef} className="hidden" width="640" height="480"></canvas>
       </div>
       {prediction && (
-        <div className="mt-5 p-5 bg-gray-100 rounded-lg shadow-lg text-center w-full max-w-lg">
+        <div className="mt-5 p-5 bg-gray-100 rounded-lg shadow-lg text-center w-full max-w-lg z-[100]">
           <h3 className="text-lg font-bold">Prediction: {prediction}</h3>
         </div>
       )}
