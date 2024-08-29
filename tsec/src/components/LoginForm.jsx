@@ -38,7 +38,7 @@ const LoginForm = () => {
         <h1 className="text-5xl font-extrabold text-white mb-10">Sign In</h1>
         <form
           onSubmit={handleSubmit} // Add the submit handler here
-          className="flex flex-col border-2 border-white rounded-lg p-5"
+          className="flex flex-col border-2 border-black rounded-lg p-5"
         >
           <input
             type="email"
@@ -55,7 +55,7 @@ const LoginForm = () => {
           </button>
           <button
             type="submit" // Set type to "submit"
-            className="border-2 border-white rounded-lg m-auto px-2 bg-black bg-opacity-25 py-2 text-white hover:scale-110"
+            className="border-2 border-black rounded-lg m-auto px-2 bg-black bg-opacity-25 py-2 text-white hover:scale-110"
             style={blockyTextStyle}
           >
             Submit
