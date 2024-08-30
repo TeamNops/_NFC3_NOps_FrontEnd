@@ -2,7 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import NewSection from "./NewSection";
+import Bussiness from "./Bussiness";
 import AboutUs from "./AboutUs";
+
 
 const Home = () => {
   const blockyTextStyle = {
@@ -38,6 +40,7 @@ const Home = () => {
       </div>
 
       <NewSection />
+      <Bussiness/>
       <AboutUs />
     </div>
   );

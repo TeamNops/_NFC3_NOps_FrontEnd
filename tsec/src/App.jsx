@@ -9,6 +9,7 @@ import CropsssHealth from "./components/CropsssHealth";
 import Dashboard from "./components/Dashboard";
 import MapView from "./components/MapView";
 import NextPage from "./components/ScreenShot";
+import VoiceflowBot from "./components/Voiceflowbot";
 const App = () => {
   return (
     <div>
@@ -25,8 +26,13 @@ const App = () => {
           <Route path="/next-page" element={<NextPage />} />
         </Routes>
       </BrowserRouter>
+      <VoiceflowBot />
     </div>
   );
 };
 
 export default App;
+
+
+
+

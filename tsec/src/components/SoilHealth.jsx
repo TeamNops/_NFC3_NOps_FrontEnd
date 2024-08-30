@@ -23,6 +23,10 @@ const SoilHealth = () => {
     textShadow: "2.25px 2.25px 0px rgba(0, 0, 0, 0.3)", // Keeps the 3D shadow effect
     transition: "transform 0.3s ease", // Smooth transition for scaling effect
   };
+  const cleanText = (text) => {
+    if (!text) return '';
+    return text.replace(/[**##$$]/g, '').trim();
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -51,7 +55,9 @@ const SoilHealth = () => {
       });
 
       const data = await response.json();
-      setPrediction(data.prediction);
+      const a=cleanText(data.prediction)
+
+      setPrediction(a);
     } catch (error) {
       console.error("Error:", error);
     }
