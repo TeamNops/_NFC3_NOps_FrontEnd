@@ -46,25 +46,32 @@ const NewSection = () => {
       <div className="relative z-10 flex justify-start items-center w-full h-full px-20">
         <div className="grid gap-8">
           <a
-            className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
+            className="text-3xl font-bold text-blue-900 py-10 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
             href="/soil"
           >
             Soil Health Analysis
           </a>
           <a
-            className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
+            className="text-3xl font-bold text-blue-900 py-10 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
             href="/crop"
+          >
+            Leaf Health Monitoring
+          </a>
+          <a
+            className="text-3xl font-bold text-blue-900 py-10 hover:scale-125 transition-transform duration-300"
+            style={blockyTextStyle}
+            href="/cropsss"
           >
             Crop Health Monitoring
           </a>
           <a
-            className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
+            className="text-3xl font-bold text-blue-900 py-10 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
             href="/dashboard"
           >
-            Personalized Recommendations
+            Location Based Monitoring
           </a>
         </div>
       </div>
