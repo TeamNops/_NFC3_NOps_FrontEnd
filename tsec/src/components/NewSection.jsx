@@ -62,7 +62,7 @@ const NewSection = () => {
           <a
             className="text-3xl font-bold text-blue-900 py-12 hover:scale-125 transition-transform duration-300"
             style={blockyTextStyle}
-            href="/soil"
+            href="/dashboard"
           >
             Personalized Recommendations
           </a>
